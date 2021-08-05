@@ -25,7 +25,7 @@ class Game:
         clock = pygame.time.Clock()
         screen = pygame.display.set_mode([900, 600])
         track = pygame.image.load('track.png').convert()
-        car = pygame.image.load('car.png').convert()
+        car = pygame.image.load('car.png').convert_alpha()
         car_rotated = car
         car_rect = car.get_rect(center=(835, 535))
         angle = 0
